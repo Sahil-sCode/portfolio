@@ -10,13 +10,27 @@
     li {
         display: inline-block;
         padding: 6px 0;
+        margin-right: 1.3rem;
+    }
+    
+    li:last-child {
+        margin-right: 2rem;
     }
     
     a {
         text-decoration: none;
-        margin-right: 1.4rem;
         color: $mainBlue;
         font-size: 1.3rem;
-        text-transform: uppercase;
+        transition: all .3s ease;
+        
+        &:hover {
+            outline-color: #fff;
+            outline: 1px solid;
+            outline-offset: 5px;
+        }
+        
+        @mixin atMedium {
+            color: #fff;
+        }
     }
 }

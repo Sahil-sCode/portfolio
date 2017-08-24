@@ -6,7 +6,7 @@
     position: relative;
     box-shadow: 0 0 10px rgba(29, 66, 219, 0.72);
     transform: translateX(-50%);
-    
+    background: #fff;
     @mixin atMedium {
         transform: translateX(0);
     }
