@@ -25,8 +25,15 @@
     }
     
     &__btn-container {
-        float: right;
-        padding: 1.5rem 0;
+        float: none;
+        text-align: right;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        
+        @mixin atMedium {
+            float: right;
+            padding: 1.5rem 0;    
+        }
     }
     
     &__menu-icon { 
@@ -43,12 +50,14 @@
         }
         
         &::before {
+            transform-origin: 0;
             background: #fff;
             position: absolute;
             content: '';
             height: 3px;
             width: 25px;
             top: 0;
+            transition: all .3s ease-out;
         }
         
         &__middle {
@@ -57,25 +66,60 @@
             height: 3px;
             width: 25px;
             top: 10px;
+            transition: all .3s ease-out;
         }
         
         &::after {
+            transform-origin: 0 50%;
             content: '';
             background: #fff;
             position: absolute;
             height: 3px;
             width: 25px;
             top: 20px;
+            transition: all .3s ease-out;
+        }
+        
+        &--close-x {
+            &::before {
+                transform: rotate(45deg) translateY(-2px);
+                width: 32px;
+            }
+            
+            .site-header__menu-icon__middle {
+                transform: scaleX(0);
+                opacity: 0;
+            }
+            
+            &::after {
+                transform: rotate(-45deg) translateY(2px);
+                width: 32px;
+            }
         }
     }
     
     &__menu-content {
         opacity: 0;
         z-index: -1;
+        visibility: hidden;
+        background: #f4f4f4;
+        padding: 10px 10px;
+        transform: translateY(-100%) scale(1.1);
+        transition: transform .3s ease-out;
         
         @mixin atMedium {
             opacity: 1;
             z-index: 1;
+            visibility: visible;
+            background: none;
+            padding: 0;
+        }
+        
+        &--is-visible {
+            opacity: 1;
+            z-index: 5;
+            visibility: visible;
+            transform: translateY(0) scale(1);
         }
     }
 } 
