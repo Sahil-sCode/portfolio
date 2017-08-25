@@ -462,7 +462,7 @@ body {
 }
 
 .site-header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -476,6 +476,7 @@ body {
 .site-header::after {
         content: '';
         clear: both;
+        display: table;
     }
 
 @media(min-width: 800px){
@@ -754,6 +755,7 @@ body {
     background: #000;
     height: 497px;
     width: 100%;
+    border-bottom: 5px solid #0bb9d0;
 }
 
 @media(min-width: 800px){
@@ -797,6 +799,7 @@ body {
                 transform: translate(-50%, -50%);
         text-align: center;
         width: 100%;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.56);
     }
 
 @media(min-width: 800px){
@@ -863,4 +866,116 @@ body {
 
 .btn:hover {
         background: #e38c00;
+    }
+
+.page-section {
+    padding: 50px 0;
+}
+
+@media(min-width: 800px){
+
+.page-section {
+        padding: 100px 0
+}
+    }
+
+.skills {
+    text-align: center;
+    background: #0bb9d0;
+    border-radius: 10px;
+    padding: 30px 30px 1px 30px;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.56);
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.56);
+    margin-bottom: 50px;
+}
+
+@media(min-width: 800px){
+
+.skills {
+        margin-bottom: 0
+}
+    }
+
+.skills__logo {
+        font-size: 4rem;
+        color: #ffa500;
+        text-shadow: 0 0 2px rgba(0, 0, 0, 0.56);
+        margin-bottom: 10px;
+    }
+
+@media(min-width: 800px){
+
+.skills__logo {
+            font-size: 5rem
+    }
+    }
+
+.skills__name {
+        font-size: 1.5rem;
+        margin-top: 8px;
+        background: #ffa500;
+        padding: 5px 0;
+        max-width: 210px;
+        margin: 0 auto;
+        -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.56);
+                box-shadow: 0 0 2px rgba(0, 0, 0, 0.56);
+    }
+
+@media(min-width: 800px){
+
+.skills__name {
+            font-size: 2.5rem;
+            max-width: 300px
+    }
+    }
+
+.skills__defintion{
+        margin-top: 20px;
+        text-align: center;
+        line-height: 1.55;
+        color: #fff;
+    }
+
+.headline {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    background: #ffa500;
+    max-width: 220px;
+    margin: 0 auto;
+    color: #fff;
+    margin-bottom: 50px;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.56);
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.56);
+}
+
+@media(min-width: 800px){
+
+.headline {
+        max-width: 500px;
+        font-size: 2.8rem;
+        margin-bottom: 80px
+}
+    }
+
+.row::after {
+        content: '';
+        clear: both;
+        display: table;
+    }
+
+.row--gutters {
+        margin-right: -45px;
+    }
+
+.row--gutters > div{
+        padding-right: 45px;
+    }
+
+@media(min-width: 800px){
+        .row__medium-4 {
+            float: left;
+            width:  33.33%;   
+        }
     }  

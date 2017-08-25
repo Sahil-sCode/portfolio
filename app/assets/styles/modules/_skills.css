@@ -1,0 +1,45 @@
+.skills {
+    text-align: center;
+    background: $mainBlue;
+    border-radius: 10px;
+    padding: 30px 30px 1px 30px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.56);
+    margin-bottom: 50px;
+    
+    @mixin atMedium {
+        margin-bottom: 0;
+    }
+    
+    &__logo {
+        font-size: 4rem;
+        color: $mainOrange;
+        text-shadow: 0 0 2px rgba(0, 0, 0, 0.56);
+        margin-bottom: 10px;
+        
+        @mixin atMedium {
+            font-size: 5rem;
+        }
+    }
+    
+    &__name {
+        font-size: 1.5rem;
+        margin-top: 8px;
+        background: $mainOrange;
+        padding: 5px 0;
+        max-width: 210px;
+        margin: 0 auto;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.56);
+        
+        @mixin atMedium {
+            font-size: 2.5rem;
+            max-width: 300px;
+        }
+    }
+    
+    &__defintion{
+        margin-top: 20px;
+        text-align: center;
+        line-height: 1.55;
+        color: #fff;
+    }
+}

@@ -2,6 +2,7 @@
     background: #000;
     height: 497px;
     width: 100%;
+    border-bottom: 5px solid $mainBlue;
     
     @mixin atMedium {
         height: 643px;
@@ -34,6 +35,7 @@
         transform: translate(-50%, -50%);
         text-align: center;
         width: 100%;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.56);
         
         @mixin atMedium {
             width: auto;
