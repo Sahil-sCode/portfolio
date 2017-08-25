@@ -20,7 +20,7 @@
         
         @mixin atMedium {
             float: left;
-            left: 20px;
+            left: 10px;
         }
     }
     
@@ -32,7 +32,7 @@
         
         @mixin atMedium {
             float: right;
-            padding: 1.5rem 0;    
+            padding: 1.5rem 0;     
         }
     }
     
@@ -113,6 +113,7 @@
             visibility: visible;
             background: none;
             padding: 0;
+            transform: translateY(0) scale(1);
         }
         
         &--is-visible {

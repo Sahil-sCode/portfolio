@@ -495,7 +495,7 @@ body {
 
 .site-header__logo-container {
             float: left;
-            left: 20px
+            left: 10px
     }
     }
 
@@ -606,7 +606,9 @@ body {
             z-index: 1;
             visibility: visible;
             background: none;
-            padding: 0
+            padding: 0;
+            -webkit-transform: translateY(0) scale(1);
+                    transform: translateY(0) scale(1)
     }
     }
 
@@ -694,7 +696,7 @@ body {
     max-width: 1250px;
     margin: 0 auto;
     padding-left: 18px;
-    padding-right: 18px;
+    padding-right: 18px; 
 }
 
 .logo { 
