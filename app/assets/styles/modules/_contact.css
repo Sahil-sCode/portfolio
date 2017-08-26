@@ -34,7 +34,7 @@
         
         @mixin atMedium {
             font-size: 1.8rem;
-            transform: translate(-50%, -120%);
+            transform: translate(-50%, -100%);
             padding: 10px 15px;
         }
             

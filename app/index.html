@@ -25,9 +25,9 @@
                </div>
                 <nav class="primary-nav">
                     <ul>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#skills" id="skills-link">Skills</a></li>
+                        <li><a href="#projects" id="projects-link">Projects</a></li>
+                        <li><a href="#contact" id="contact-link">Contact</a></li>
                     </ul>
                 </nav>
             </div>     
@@ -49,11 +49,11 @@
         </div>
     </div>
     
-    <section id="skills" class="page-section">
+    <section id="skills" class="page-section" data-matching-link="#skills-link">
        <div class="wrapper">
            <h1 class="headline">Main Skills</h1>
 
-            <div class="row row--gutters">
+            <div class="row row--gutters row--equal-height-at-medium">
                 <div class="row__medium-4">
                     <div class="skills">
                         <div class="skills__logo">&lt;/&gt;</div>
@@ -79,7 +79,7 @@
         </div>
     </section>
     
-    <section id="projects" class="page-section page-section--less-white">
+    <section id="projects" class="page-section page-section--less-white" data-matching-link="#projects-link">
         <h1 class="headline">Projects</h1>
         <div class="wrapper">
             <div class="row row--gutters">
@@ -116,7 +116,7 @@
         </div>            
     </section>
     
-    <section id="contact" class="page-section">
+    <section id="contact" class="page-section" data-matching-link="#contact-link">
             <div class="contact">
                 <div class="contact__bg-img"><img src="assets/images/contact-bg.jpg" alt="Code in a Computer"></div>
                 <div class="wrapper">

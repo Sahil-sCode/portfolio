@@ -23,6 +23,15 @@
         margin: 0 auto;
         width: 340px;
         height: auto;
+        
+        @mixin atMedium {
+            width: inherit;
+            
+        }
+        
+        @mixin atLarge {
+            width: 340px;
+        }
     }
     
     &__img {

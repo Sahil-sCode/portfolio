@@ -17,4 +17,22 @@
         }
     }
     
+    /*
+        equal height at medium
+    */
+    &--equal-height-at-medium {
+        @mixin atMedium {
+            display: flex;
+        }
+        
+        & > div {
+            float: none;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+        }
+    }
+    
 }
