@@ -51,4 +51,12 @@
             font-size: 1.3rem;
         }
     }
+    
+    .is-current-link {
+        color: $mainBlue;
+        
+        @mixin atMedium {
+            color: $mainOrange;
+        }
+    }
 }

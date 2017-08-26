@@ -702,6 +702,17 @@ body {
     }
     }
 
+.primary-nav .is-current-link {
+        color: #0bb9d0;
+    }
+
+@media(min-width: 800px){
+
+.primary-nav .is-current-link {
+            color: #ffa500
+    }
+    }
+
 .wrapper {
     max-width: 1250px;
     margin: 0 auto;
