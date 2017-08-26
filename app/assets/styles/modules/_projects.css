@@ -1,0 +1,47 @@
+.projects {
+    margin-bottom: 50px;
+    
+    @mixin atMedium {
+        margin-bottom: 0;
+    }
+    
+    &__type {
+        max-width: 340px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        background: $mainBlue;
+        padding: 5px 0;
+        text-align: center;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.56);
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+    
+    &__img-container {
+        margin: 0 auto;
+        width: 340px;
+        height: auto;
+    }
+    
+    &__img {
+            width: 100%;
+            height: auto;
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.56);
+    }
+    
+    &__name {
+        max-width: 340px;
+        margin: 0 auto;
+        margin-top: 20px;
+        background: $mainBlue;
+        padding: 5px 0;
+        text-align: center;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.56);
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+}

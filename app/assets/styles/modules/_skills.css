@@ -28,7 +28,9 @@
         padding: 5px 0;
         max-width: 210px;
         margin: 0 auto;
+        font-weight: 500;
         box-shadow: 0 0 2px rgba(0, 0, 0, 0.56);
+        text-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
         
         @mixin atMedium {
             font-size: 2.5rem;
