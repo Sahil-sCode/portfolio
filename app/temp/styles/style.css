@@ -1095,6 +1095,7 @@ body {
     background: #095552;
     padding: 10px 0;
     text-align: center;
+    position: relative;
 }
 
 @media(min-width: 800px){
@@ -1115,6 +1116,41 @@ body {
             font-size: 1rem
     }
     }
+
+.site-footer__social-icon {
+        position: absolute;
+        top: 50%;
+        right: 100px;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+    }
+
+.site-footer__social-icon__facebook {
+            text-decoration: none;
+            font-size: 1.1rem;
+            color: #fff;
+            background: hsla(0, 0%, 0%, 0.42);
+            padding: 5px 13px;
+            border-radius: 100px;
+            margin-right: 10px;
+        }
+
+.site-footer__social-icon__facebook:hover {
+                background: hsla(0, 0%, 0%, 0.56);
+            }
+
+.site-footer__social-icon__google {
+            text-decoration: none;
+            font-size: .90rem;
+            color: #fff;
+            background: hsla(0, 0%, 0%, 0.42);
+            padding: 7px 13px;
+            border-radius: 100px;
+        }
+
+.site-footer__social-icon__google:hover {
+                background: hsla(0, 0%, 0%, 0.56);
+            }
 
 .contact {
     position: relative;
