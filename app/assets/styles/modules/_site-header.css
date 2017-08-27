@@ -9,7 +9,7 @@
     z-index: 1;
     
     &--orange {
-        background: $mainOrange;
+        background: #e6a208;
         
         .btn {
             background: $mainBlue;
@@ -17,7 +17,7 @@
         }
         
         .btn:hover {
-            background: #0ca290;
+            background: #02a2b7;
         }
         
        li > .is-current-link {
