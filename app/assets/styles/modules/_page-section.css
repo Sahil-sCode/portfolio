@@ -10,4 +10,8 @@
         background: #f4f4f4;
     }
     
+    &--blue {
+        background: $mainBlue;
+    }
+    
 }

@@ -27,7 +27,7 @@
                     <ul>
                         <li><a href="#skills" id="skills-link">Skills</a></li>
                         <li><a href="#projects" id="projects-link">Projects</a></li>
-                        <li><a href="#contact" id="contact-link">Contact</a></li>
+                        <li><a href="#message" id="contact-link">Contact</a></li>
                     </ul>
                 </nav>
             </div>     
@@ -123,6 +123,47 @@
                 <p class="contact__text">contact me @ <a href="#">sahilhaque24.10@gmail.com</a></p>
                 </div>
             </div>
+    </section>
+    
+    <section id="message" class="page-section page-section--blue" data-matching-link="#contact-link">
+        <h1 class="headline">message me</h1>
+        <div class="wrapper wrapper--narrow">
+            <form action="#" method="post" class="contact-form">
+                <div class="row row--gutters">
+                    <div class="row__medium-4">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="row__medium-8">
+                        <input type="text" name="name" placeholder="Your name" autocomplete="on" required>
+                    </div>
+                </div>
+                <div class="row row--gutters">       
+                    <div class="row__medium-4">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="row__medium-8">
+                        <input name="email" type="email" placeholder="Your email" autocomplete="on" required>
+                    </div>
+                </div>
+                <div class="row row--gutters">
+                   <div class="row__medium-4">
+                       <label for="message">Your message</label>
+                   </div>       
+                    <div class="row__medium-8">
+                        <textarea name="message" id="message" placeholder="Your message"></textarea>
+                    </div>
+                </div>
+                <div class="row row--gutters">
+                   <div class="row__medium-4">
+                       <label for="message">&nbsp;</label>
+                   </div>       
+                    <div class="row__medium-8">
+                        <div class="btn contact-form__submit-btn" type="submit">Send it!</div>
+                    </div>
+                </div>
+                
+            </form>       
+        </div>
     </section>
     
     <footer class="site-footer">
