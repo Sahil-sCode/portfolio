@@ -8,6 +8,25 @@
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.34);
     z-index: 1;
     
+    &--orange {
+        background: $mainOrange;
+        
+        .btn {
+            background: $mainBlue;
+            transition: background .3s ease-out;
+        }
+        
+        .btn:hover {
+            background: #0ca290;
+        }
+        
+       li > .is-current-link {
+            @mixin atMedium {
+                color: $mainBlue;
+            }
+        }
+    }
+    
     @mixin clearfix;
     @mixin atMedium {
         height: auto;
