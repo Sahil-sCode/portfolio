@@ -454,6 +454,7 @@ template {
 
 body {
     font-family: 'Roboto', 'Arial', sans-serif;
+    color: #555;
 }
 
 * {
@@ -1301,25 +1302,21 @@ body {
 
 .contact-form textarea {
             width: 450px;
-            margin-top: 0
+            margin-top: 0;
+            margin-bottom: 25px
     }
     }
 
 .contact-form__submit-btn {
         cursor: pointer;
-        margin-top: 15px;
-        width: 120px;
         text-align: center;
         font-size: 1.2rem;
-        margin: 0 auto;
+        text-transform: uppercase;
     }
 
 @media(min-width: 800px){
 
 .contact-form__submit-btn {
-            margin: 0;
-            margin-top: 35px;
-            width: 200px;
             font-size: 1.4rem
     }
     }
